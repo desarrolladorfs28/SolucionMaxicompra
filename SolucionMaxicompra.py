@@ -69,11 +69,11 @@ while continuar_programa.lower() == "si":
             if tipo_contrato == "planilla":
                 sueldo_bruto = pago_base_semanal + asignacion_familiar + monto_horas_extras
                 # AFP Hábitat 13.21%
-                descuento_afp = sueldo_bruto * 0.1321
+                descuento_afp = sueldo_bruto * 0.1137
                 
                 # Impuesto a la renta (Simplificado: si anual > 7 UIT)
                 impuesto_renta = 0
-                if (monto_mensual * 14) > 36050:
+                if (monto_mensual * 14) > 38500:
                     impuesto_renta = sueldo_bruto * 0.08
                 
                 sueldo_neto = sueldo_bruto - descuento_afp - impuesto_renta
